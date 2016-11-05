@@ -62,7 +62,7 @@ int main(int argc,char *argv[])//The program will accept command line arguments 
 				else {size=size/1024;strcpy(type,"Gigabytes");}
 
 	printf("Total size of files copied = %.2f %s\n",size,type);
-	printf("Average speed = %.2f mb/secs\n",(float)size_o/difftime(end,start)/1024/1024);
+	printf("Time taken for copying = %.2f secs\n",difftime(end,start));
 
 	return 0;
 }
